@@ -1,0 +1,28 @@
+plugins {
+  id 'nebula.plugin-plugin' version '5.18.0'
+}
+
+description 'WinSW wrapper repackaging plugin'
+
+group = 'in.chamberl.kyle.gradle'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+contacts {
+  'kyle@chamberl.in' {
+    moniker 'Kyle Chamberlin'
+    github 'KyleChamberlin'
+  }
+}
+
+pluginBundle {
+  plugins {
+    winSwRepackage {
+      id = 'winsw.repackage'
+	 displayName = 'WinSW Spring Boot Repackaging plugin'
+	 description = project.description
+	 tags = ['spring-boot', 'packaging', 'winsw']
+    }
+  }
+}
